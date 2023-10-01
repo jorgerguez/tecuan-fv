@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "DM Serif Text";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/dm-serif.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/outfit.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/poppins.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Righteous";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/righteous.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Sanchez";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/sanchez.ttf") format("truetype");
+}
+
+.outfit {
+  font-family: 'Outfit', sans-serif;
+}
+.righteous {
+  font-family: 'Righteous', sans-serif;
+}
+.dm-serif {
+  font-family: 'DM Serif Text', serif;
+}
+.fredoka {
+  font-family: 'Fredoka One', sans-serif;
+}
+.poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.sanchez {
+  font-family: 'Sanchez', serif;
+}
+.card-shadow {
+  filter: drop-shadow(7px 7px 0 rgb(0 0 0 / 1));
+  transition: all;
+  transition-duration: 0.5s;
+  animation: ease-in-out;
+}
+.card-shadow:hover {
+  filter: drop-shadow(5px 5px 0 rgb(0 0 0 / 1));
+}
+
+body {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #0d1117;
+  --sb-size: 0.5em;
+
+  scrollbar-color: var(--sb-thumb-color) 
+                   var(--sb-track-color);
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size) 
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);  
+  }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-jaguar {
+  background-image: radial-gradient(#212121 20%, transparent 20%),
+     radial-gradient(#212121 20%, transparent 20%);
+  background-color: #fcb247;
+  background-position: 0 0, 50px 50px;
+  background-size: 100px 100px;
+  width: 100%;
+}
+
+.logo{
+  max-width:150px;
+}
+
+@keyframes move {
+  0% {
+    transform-origin: center;
+    transform: scale(1);
+    transform-box: fill-box;
+  }
+
+  50% {
+    transform-origin: center;
+    transform: scale(1, -0.9);
+    transform-box: fill-box;
+  }
+
+  75% {
+    transform-origin: center;
+    transform: scale(1, -0.7);
+    transform-box: fill-box;
+  }
+
+  100% {
+    transform-origin: center;
+    transform: scale(1);
+    transform-box: fill-box;
+  }
+}
+
+#g5861-09-2, #g5853-9-7{
+  animation: move 2s infinite;
+}
