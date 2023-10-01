@@ -4,7 +4,7 @@ import UnoCSS from 'unocss/astro';
 
 export default defineConfig({
   // used to generate images
-  site: 'https://tecuan.net/',
+  site: 'https://www.tecuan.net/',
   trailingSlash: 'ignore',
   integrations: [sitemap(), UnoCSS({ injectReset: true })],
   vite: {
