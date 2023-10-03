@@ -17,5 +17,5 @@ interface Props {
 const { blogpost } = Astro.props;
 const { Content } = await blogpost.render();
 ---
-
+<h2>{blogpost.title}</h2>
 <Content />
