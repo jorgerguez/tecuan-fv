@@ -1,20 +1,25 @@
 ---
 import { Image } from 'astro:assets';
 
-interface Props {
-  content: any;
-}
 
 const { content } = Astro.props;
+
 ---
 
-<article class='prose-slate w-sm md:w-prose md:prose poppins'>
+<article class='prose-slate w-sm md:w-prose md:prose poppins' style="width: 100%; max-width: none;">
   <a href='/blog/' title='Back to blog'>&larr; Volver al catálogo</a>
-  <!--<p class='text-slate text-sm md:text-base'>
-    Published on {content.pubDate} by {content.author}
-  </p>-->
+  <p class='text-slate text-sm md:text-base'>
+    Disponible desde el {content.pubDate}
+  </p>
   <!--<Image
       src={content.imgSrc}
+      width={800}
+      height={400}
+      class='rounded h-full w-full object-cover'
+    />-->
+    <!--<Image
+      src={imgSrc}
+      alt={content.title}
       width={800}
       height={400}
       class='rounded h-full w-full object-cover'

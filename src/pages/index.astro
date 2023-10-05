@@ -25,14 +25,14 @@ const socialIcons = [
   pageTitle='Tecuán Tienda de hobbies | Home'
   description='Hola, bienvenido a tu tienda de juegos y figuras coleccionables'
 >
-  <main class='bg-jaguar p-6'>
+  <main class='p-6'>
     <MobileSocials />
     <section id='intro' class='grid md:grid-cols-8 gap-8 mt-4'>
       <h2 class='hidden'>Acerca de Tecuán</h2>
       <div class='col-span-8'>
         <Card color="whitesmoke">
           <div class='grid grid-cols-4 sm:grid-cols-8  gap-4 mt-4'>
-            <div class="col-span-2 col-start-2 sm:col-start-1">
+            <div class="col-span-2 sm:col-span-1 col-start-2 sm:col-start-1">
               <svg
                 width="100%"
                 viewBox="0 0 28.080688 33.516418"
@@ -314,9 +314,9 @@ const socialIcons = [
                 Hola 🤙, bienvenido a tu tienda de hobbies
               </p>
               <p class='mt-2 sanchez text-xl md:text-2xl lg:text-3xl'>
-                Este sitio está en construcción, pero te invitamos a conocer nuestra variedad de artículos en nuestras redes sociales
+                Bienvenido a nuestra catálogo en línea, por el momento solo se reciben pedidos por chat.
               </p>
-                <ul class='flex gap-8 poppins justify around p-6'>
+                <!--<ul class='flex gap-8 poppins justify around p-6'>
                 {
                   socialIcons.map((item) => (
                   <Button target={'_self'} href={item.url} class="flex">
@@ -324,14 +324,14 @@ const socialIcons = [
                   </Button>
                   ))
                 }
-                </ul>
+                </ul>-->
               
             </div>
           </div>
         </Card>
       </div>
     </section>
-    <!--<RecentBlogPosts />-->
+    <RecentBlogPosts />
     <section id='about' class='grid md:grid-cols-8 gap-8 mt-8'>
       <div class='col-span-8 md:col-span-4'>
         <Card color="#06bbd5">
