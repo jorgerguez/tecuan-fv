@@ -1,6 +1,4 @@
 ---
-import { Image } from 'astro:assets';
-
 
 const { content } = Astro.props;
 
@@ -11,19 +9,6 @@ const { content } = Astro.props;
   <p class='text-slate text-sm md:text-base'>
     Disponible desde el {content.pubDate}
   </p>
-  <!--<Image
-      src={content.imgSrc}
-      width={800}
-      height={400}
-      class='rounded h-full w-full object-cover'
-    />-->
-    <!--<Image
-      src={imgSrc}
-      alt={content.title}
-      width={800}
-      height={400}
-      class='rounded h-full w-full object-cover'
-    />-->
   <slot />
   <!--<p class='text-slate'>Written by {content.author}</p>-->
   <a href='/blog/' title='Back to blog'>&larr; Volver al catálogo</a>
